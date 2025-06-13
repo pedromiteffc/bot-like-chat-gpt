@@ -1,47 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPT BOT - Pedro Miteff</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club GELZ</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <img src="menu-line.png" class="icono-menu" alt="Menú">
+    <img src="cabb.png" class="logo-central" alt="Logo Argentina">
+    <img src="user-line.png" class="icono-user" alt="Usuario">
+  </header>
 
-    <div class="container">
-
-        <div class="header">
-            <h3>Pedro Miteff - GPT BOT</h3>
-        </div>
-
-        <div class="info">
-            <a href="https://github.com/pedromiteffc" target="_blank">Hecho por Pedro Miteff</a>
-        </div>
-
-        <div class="chat-container">
-            <div id="chat-log"></div>
-        </div>
-
-        <div class="input-container">
-            <input type="text" name="user-input" id="user-input" placeholder="Envia un mensaje ... ">
-            <button id="send-button">
-                <i class="fa-solid fa-paper-plane" id="button-icon"></i>
-            </button>
-        </div>
-
+  <section class="club-info">
+    <img src="image.png" alt="GELZ" class="logo-club">
+    <div class="club-datos">
+      <h2 class="nombre-club">Gimnasia (Lomas de Zamora)</h2>
+      <span class="nombre-federacion">FEBAMBA</span>
     </div>
+    <img src="FEBAMBA.png" alt="FEBAMBA" class="logo-fed">
+  </section>
 
-    <script src="assets/js/main.js"></script>
-    
+  <nav class="tabs">
+    <div class="tab">EQUIPOS</div>
+    <div class="tab active">PARTIDOS</div>
+  </nav>
+
+  <main>
+    <p class="mensaje">NO SE HA ENCONTRADO NINGUN PARTIDO<br>POR FAVOR INTENTE MAS TARDE</p>
+  </main>
+
+  <footer>
+    <img src="kelme.png" class="kelme-logo" alt="Kelme">
+    <img src="bp.jpg" class="playstore-icon" alt="PlayStore">
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
