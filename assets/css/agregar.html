@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Equipo</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+    <!-- ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header" id="header" data-header>
+
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="assets/img/favicon.svg" width="30px">
+            </a>
+    
+            <button class="menu-toggle-btn" id="menu-toggle-btn" data-nav-toggle-btn>
+                <i class="ri-menu-line"></i>
+            </button>
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-icon">
+                        <i class="ri-team-line navbar-link-icon"></i>
+                        <a href="index.html" class="navbar-link">Mis Equipos</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-calendar-2-line navbar-link-icon"></i>
+                        <a href="proximos.html" class="navbar-link">Proximos Partidos</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-basketball-line navbar-link-icon"></i>
+                        <a href="resultados.html" class="navbar-link">Resultados</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-search-line navbar-link-icon"></i>
+                        <a href="buscador.html" class="navbar-link">Buscador</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-file-line navbar-link-icon"></i>
+                        <a href="legales.html" class="navbar-link">Aviso Legal</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-settings-5-line navbar-link-icon"></i>
+                        <a href="config.html" class="navbar-link">Configuracion</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-user-line navbar-link-icon"></i>
+                        <a href="sesion.png" class="navbar-link">Inicia Sesión</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <section class="blog" id="blog">
+
+                <div class="container">
+
+                    <div class="titulo">
+                        <h2 class="h2 section-title tituloo">Agrega tu Equipo</h2>
+                    </div>
+
+                    <div class="form-container">
+
+                        <select name="federacion" id="federacion" class="select-formulario">
+                            <option value="" disabled selected>Selecciona la Federación ...</option>
+                        </select>
+
+                        <select name="competencia" id="competencia" class="select-formulario">
+                            <option value="" disabled selected>Selecciona la Competencia ...</option>
+                        </select>
+
+                        <select name="categoria" id="categoria" class="select-formulario">
+                            <option value="" disabled selected>Selecciona la Categoría ...</option>
+                        </select>
+
+                        <select name="club" id="club" class="select-formulario">
+                            <option value="" disabled selected>Selecciona el Club ...</option>
+                        </select>
+
+                        <select name="equipo" id="equipo" class="select-formulario">
+                            <option value="" disabled selected>Selecciona el Equipo ...</option>
+                        </select>
+
+                        <button class="agregar-equipo">Agregar Equipo</button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <script src="assets/js/calculator.js"></script>
+    
+</body>
+</html>
