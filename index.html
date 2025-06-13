@@ -1,41 +1,246 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Club GELZ</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMA DE TIMBA</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+    <!-- ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 <body>
-  <header>
-    <img src="menu-line.png" class="icono-menu" alt="Menú">
-    <img src="cabb.png" class="logo-central" alt="Logo Argentina">
-    <img src="user-line.png" class="icono-user" alt="Usuario">
-  </header>
 
-  <section class="club-info">
-    <img src="image.png" alt="GELZ" class="logo-club">
-    <div class="club-datos">
-      <h2 class="nombre-club">Gimnasia (Lomas de Zamora)</h2>
-      <span class="nombre-federacion">FEBAMBA</span>
-    </div>
-    <img src="FEBAMBA.png" alt="FEBAMBA" class="logo-fed">
-  </section>
+    <header class="header" id="header" data-header>
 
-  <nav class="tabs">
-    <div class="tab">EQUIPOS</div>
-    <div class="tab active">PARTIDOS</div>
-  </nav>
+        <div class="container">
 
-  <main>
-    <p class="mensaje">NO SE HA ENCONTRADO NINGUN PARTIDO<br>POR FAVOR INTENTE MAS TARDE</p>
-  </main>
+            <a href="index.html" class="logo">
+                <img src="assets/img/favicon.svg" width="30px">
+            </a>
+    
+            <button class="menu-toggle-btn" id="menu-toggle-btn" data-nav-toggle-btn>
+                <i class="ri-menu-line"></i>
+            </button>
 
-  <footer>
-    <img src="kelme.png" class="kelme-logo" alt="Kelme">
-    <img src="bp.jpg" class="playstore-icon" alt="PlayStore">
-  </footer>
+            <nav class="navbar">
 
-  <script src="main.js"></script>
+                <ul class="navbar-list">
+
+                    <li class="navbar-icon">
+                        <i class="ri-team-line navbar-link-icon"></i>
+                        <a href="index.html" class="navbar-link">Mis Equipos</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-calendar-2-line navbar-link-icon"></i>
+                        <a href="proximos.html" class="navbar-link">Proximos Partidos</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-basketball-line navbar-link-icon"></i>
+                        <a href="resultados.html" class="navbar-link">Resultados</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-search-line navbar-link-icon"></i>
+                        <a href="buscador.html" class="navbar-link">Buscador</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-file-line navbar-link-icon"></i>
+                        <a href="legales.html" class="navbar-link">Aviso Legal</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-settings-5-line navbar-link-icon"></i>
+                        <a href="config.html" class="navbar-link">Configuracion</a>
+                    </li>
+
+                    <li class="navbar-icon">
+                        <i class="ri-user-line navbar-link-icon"></i>
+                        <a href="sesion.png" class="navbar-link">Inicia Sesión</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <article>
+
+            <section class="blog" id="blog">
+
+                <div class="container">
+
+                    
+                    <div class="titulo">
+
+                        <h2 class="h2 section-title tituloo">Mis Equipos</h2>
+
+                        <button class="btn-add-equipo" id="btn-add-equipo">
+                            <i class="ri-add-line"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="teams-container">
+
+                        <div class="team-card">
+
+                            <img src="assets/img/Tortuguitas.png" alt="" class="escudo-equipo">
+
+                            <div class="team-info">
+
+                                <div class="nombre-equipo">Tortuguitas</div>
+                                <div class="categoria-equipo">U21 Masculino</div>
+                                <div class="torneo-equipo">Formativas 2025</div>
+
+                            </div>
+
+                            <img src="assets/img/FEBAMBA.png" alt="" class="federacion-imagen">
+
+                        </div>
+
+                        <div class="team-card">
+
+                            <img src="assets/img/Comunicaciones.png" alt="" class="escudo-equipo">
+
+                            <div class="team-info">
+
+                                <div class="nombre-equipo">Comunicaciones (Mercedes)</div>
+                                <div class="categoria-equipo">La Liga Argentina</div>
+                                <div class="torneo-equipo">Asociación de Clubes</div>
+
+                            </div>
+
+                            <img src="assets/img/liga-argentina.png" alt="" class="federacion-imagen">
+
+                        </div>
+
+                        <div class="team-card">
+
+                            <img src="assets/img/Ferro.png" alt="" class="escudo-equipo">
+
+                            <div class="team-info">
+
+                                <div class="nombre-equipo">Ferro (San Salvador)</div>
+                                <div class="categoria-equipo">La Liga Federal</div>
+                                <div class="torneo-equipo">Competencias CAB</div>
+
+                            </div>
+
+                            <img src="assets/img/federal.png" alt="" class="federacion-imagen">
+
+                        </div>
+
+                        <div class="team-card">
+
+                            <img src="assets/img/Argentino.png" alt="" class="escudo-equipo">
+
+                            <div class="team-info">
+
+                                <div class="nombre-equipo">Argentino (Junin)</div>
+                                <div class="categoria-equipo">La Liga Nacional</div>
+                                <div class="torneo-equipo">Asociación de Clubes</div>
+
+                            </div>
+
+                            <img src="assets/img/liga.png" alt="" class="federacion-imagen">
+
+                        </div>
+
+                        <div class="team-card">
+
+                            <img src="assets/img/Montmartre.png" alt="" class="escudo-equipo">
+
+                            <div class="team-info">
+
+                                <div class="nombre-equipo">Montmartre</div>
+                                <div class="categoria-equipo">La Liga Femenina</div>
+                                <div class="torneo-equipo">Asociación de Clubes</div>
+
+                            </div>
+
+                            <img src="assets/img/liga-femenina.png" alt="" class="federacion-imagen">
+
+                        </div>
+
+                        <div class="team-card">
+
+                            <img src="assets/img/Regatas.png" alt="" class="escudo-equipo">
+
+                            <div class="team-info">
+
+                                <div class="nombre-equipo">Regatas (San Nicolas)</div>
+                                <div class="categoria-equipo">U21 Masculino</div>
+                                <div class="torneo-equipo">Liga Formativa</div>
+
+                            </div>
+
+                            <img src="assets/img/Buenos_Aires.png" alt="" class="federacion-imagen">
+
+                        </div>
+
+                        <div class="team-card">
+
+                            <img src="assets/img/Obera.png" alt="" class="escudo-equipo">
+
+                            <div class="team-info">
+
+                                <div class="nombre-equipo">Obera TC</div>
+                                <div class="categoria-equipo">La Liga de Desarrollo</div>
+                                <div class="torneo-equipo">Asociación de Clubes</div>
+
+                            </div>
+
+                            <img src="assets/img/liga-desarrollo.png" alt="" class="federacion-imagen">
+
+                        </div>
+
+                        <div class="team-card">
+
+                            <img src="assets/img/Fortaleza.png" alt="" class="escudo-equipo">
+
+                            <div class="team-info">
+
+                                <div class="nombre-equipo">Fortaleza (Brasil)</div>
+                                <div class="categoria-equipo">Interligas 2024</div>
+                                <div class="torneo-equipo">Asociación de Clubes</div>
+
+                            </div>
+
+                            <img src="assets/img/Buenos_Aires.png" alt="" class="federacion-imagen">
+
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="assets/js/calculator.js"></script>
+
+    
 </body>
 </html>
