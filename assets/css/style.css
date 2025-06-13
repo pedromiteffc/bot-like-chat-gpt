@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root
 {
@@ -1248,14 +1249,14 @@ th
 
 .nombre-equipo
 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     color: #000;
 }
 
 .torneo-equipo
 {
-    font-size: 10px;
+    font-size: 13px;
     color: #5598eb;
 }
 
@@ -1264,4 +1265,59 @@ th
     width: 30px;
     height: 30px;
     margin-left: 15px;
+}
+
+footer
+{
+    background-color: #fff;
+}
+
+.imagenes-footer
+{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.izq, .der
+{
+    height: 50px;
+}
+
+.form-container
+{
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+select
+{
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+    color: #444;
+    position: relative;
+}
+
+.agregar-equipo
+{
+    padding: 15px;
+    background-color: #5598eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
 }
